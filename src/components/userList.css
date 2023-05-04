@@ -1,0 +1,49 @@
+.user-list {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  border-bottom: 2px solid #f1f0f2;
+}
+
+.user-list:hover {
+  background-color: #ecf3fe;
+}
+
+.user-info {
+  min-height: 50px;
+}
+
+.user-name {
+  flex: 3;
+}
+
+.user-company {
+  flex: 2;
+}
+
+.user-email {
+  flex: 3;
+}
+
+.user-phone {
+  flex: 3;
+}
+
+.user-status {
+  flex: 1;
+}
+
+.user-icon {
+  font-size: 40px !important;
+}
+
+.active-user {
+  border-style: solid;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: #f6f8ff;
+  color: #189689;
+  border-color: #d2dbea;
+}

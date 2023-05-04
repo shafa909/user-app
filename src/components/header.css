@@ -1,0 +1,39 @@
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 25px;
+    border-bottom: 2px solid #f1f0f2;
+    background-color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    color: #6f7179;
+    align-items: baseline;
+    margin-top: 12px;
+}
+
+.margin-11 {
+    margin-top: 11px;
+}
+
+
+.active {
+  border-style: solid;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f6f8ff;
+  color: #143e84;
+  border-color: #d2dbea;
+}
+
+.account {
+    margin-top: 20px;
+    display: flex;
+    color: #6f7179;
+}
+
+.account-icon {
+    font-size: 32px !important;
+}

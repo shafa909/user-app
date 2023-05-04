@@ -1,0 +1,41 @@
+.home-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-bar {
+  padding-top: 40px;
+  padding-bottom:20px ;
+  padding-inline: 30px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.add-user-btn {
+  background-color: #0f3d83 !important;
+  text-transform: none;
+}
+
+.search-box {
+  background-color: #fafcff;
+  padding-block: 10px;
+  padding-inline: 30px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.search-bar {
+  width: 70%;
+  background-color: #fff;
+  color: #6f7179;
+}
+
+.user-box {
+  padding-block: 10px;
+  padding-inline: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
