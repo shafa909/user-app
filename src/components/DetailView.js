@@ -22,7 +22,7 @@ function DetailView() {
         User Info
       </Typography>
       <div className="details-main">
-        <DetailSideBar />
+        <DetailSideBar userStatus={userData.status} />
         <UserInfo userData={userData} />
       </div>
     </div>

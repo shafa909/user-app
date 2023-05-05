@@ -9,7 +9,7 @@
 }
 
 .profile-title {
-  font-size : 15px !important;
+  font-size: 15px !important;
   font-weight: bold;
 }
 
@@ -25,10 +25,10 @@
   border: 1.5px solid #f1f0f2;
   padding: 10px;
   border-radius: 7px;
-  width: -webkit-fill-available
+  width: -webkit-fill-available;
 }
 
-.chat-btn{
+.chat-btn {
   background-color: #2572ba !important;
   border-radius: 11px !important;
 }
@@ -47,7 +47,7 @@
 }
 
 .info-title {
-  font-size : 12px !important;
+  font-size: 12px !important;
   font-weight: bold;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .edit-icon {
-  font-size: 13px !important; 
+  font-size: 13px !important;
 }
 
 .data-box {
@@ -78,13 +78,25 @@
   padding: 10px;
 }
 
-
-.active-user-status { border-style: solid;
-padding: 5px;
-font-weight: bold;
-font-size: 14px;
-border-radius: 5px;
-background-color: #D0EAE7;
-color: #189689;
-border-color: #D0EAE7;
+.active-user-status {
+  border-style: solid;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: #d0eae7;
+  color: #189689;
+  border-color: #d0eae7;
 }
+
+.inactive-user-status {
+  border-style: solid;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: #f5dfdf;
+  color: #cf6061;;
+  border-color: #f5dfdf;
+}
+

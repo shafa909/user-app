@@ -1,6 +1,5 @@
-import { Typography, Stack, Button } from "@mui/material";
+import { Stack } from "@mui/material";
 import AccountCircle from "@mui/icons-material/AccountCircle";
-import ChatIcon from "@mui/icons-material/Chat";
 import TextLabel from "./TextLabel";
 import EditIcon from "@mui/icons-material/Edit";
 import "./userInfo.css";
@@ -15,18 +14,12 @@ function UserInfo({ userData }) {
           <AccountCircle className="user-info-icon" />
           <TextLabel label={"Username"} value={userData.username} />
         </Stack>
-        {/* <Button
-          className="chat-btn"
-          sx={{ textTransform: "none" }}
-          variant="contained"
-        >
-          <ChatIcon />
-        </Button> */}
 
-        <p className="active-user-status">
-          Active
-        </p>
-
+        {userData.status === "active" ? (
+          <p className="active-user-status">Active</p>
+        ) : (
+          <p className="inactive-user-status">Inactive</p>
+        )}
       </div>
 
       <div className="info-box">

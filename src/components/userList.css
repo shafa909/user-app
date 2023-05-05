@@ -43,7 +43,20 @@
   font-weight: bold;
   font-size: 14px;
   border-radius: 5px;
-  background-color: #f6f8ff;
+  background-color: #d0eae7;
   color: #189689;
-  border-color: #d2dbea;
+  border-color: #d0eae7;
+  min-width: 55px;
+}
+
+.inactive-user {
+  border-style: solid;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: #f5dfdf;
+  color: #cf6061;
+  border-color: #f5dfdf;
+  min-width: 55px;
 }

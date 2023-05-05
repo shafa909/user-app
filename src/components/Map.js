@@ -1,12 +1,12 @@
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
-function Map({geoLocation}) {
+function Map({ geoLocation }) {
   const mapStyles = {
     height: "300px",
     width: "-webkit-fill-available",
     borderRadius: "7px",
-    margin :'7px',
-    marginBlock : '10px'
+    margin: "7px",
+    marginBlock: "10px",
   };
 
   const defaultCenter = {
@@ -16,13 +16,9 @@ function Map({geoLocation}) {
 
   return (
     <LoadScript googleMapsApiKey={process.env.GOOGLE_MAP_KEY}>
-      <GoogleMap
-        mapContainerStyle={mapStyles}
-        zoom={15}
-        center={defaultCenter}
-      >
-       <Marker key={'shafa'} position={defaultCenter}/>
-       </GoogleMap>
+      <GoogleMap mapContainerStyle={mapStyles} zoom={15} center={defaultCenter}>
+        <Marker key={"shafa"} position={defaultCenter} />
+      </GoogleMap>
     </LoadScript>
   );
 }

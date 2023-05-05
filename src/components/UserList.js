@@ -59,7 +59,11 @@ function UserList({ userData }) {
           alignItems="center"
           gap={1}
         >
-          <p className="active-user">Active</p>
+          {userData.status === "active" ? (
+            <p className="active-user">Active</p>
+          ) : (
+            <p className="inactive-user">Inactive</p>
+          )}
         </Stack>
       </div>
     </Link>

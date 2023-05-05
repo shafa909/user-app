@@ -1,4 +1,4 @@
-import { Typography, Button, Stack } from "@mui/material";
+import { Button } from "@mui/material";
 import Header from "./Header";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import InputAdornment from "@mui/material/InputAdornment";
@@ -7,9 +7,13 @@ import TextField from "@mui/material/TextField";
 import TuneIcon from "@mui/icons-material/Tune";
 import UserList from "./UserList";
 import "./home.css";
-import Data from "../data.json";
+import uData from "../data.json";
+import { useState, useEffect } from "react";
 
 function Home() {
+  const [userData, setUserData] = useState(uData);
+  const [searchWord, setSearchWord] = useState("");
+
   const iconAdornment = {
     style: { color: "#6f7179" },
     startAdornment: (
@@ -24,6 +28,19 @@ function Home() {
     ),
   };
 
+  useEffect(() => {
+    if (!searchWord) setUserData(uData);
+    else {
+      const FilterdData = filterItems(uData, searchWord);
+      setUserData(FilterdData);
+    }
+  }, [searchWord]);
+
+  function filterItems(arr, query) {
+    return arr.filter((user) =>
+      user.name.toLowerCase().includes(query.toLowerCase())
+    );
+  }
   return (
     <>
       <Header isHome={true} />
@@ -40,14 +57,18 @@ function Home() {
         </div>
         <div className="search-box">
           <TextField
+            value={searchWord}
             className="search-bar"
             placeholder="Search user"
             size="small"
             InputProps={iconAdornment}
+            onChange={(e) => {
+              setSearchWord(e.target.value);
+            }}
           />
         </div>
         <div className="user-box">
-          {Data.map((user) => {
+          {userData.map((user) => {
             return <UserList userData={user} />;
           })}
         </div>
