@@ -6,11 +6,11 @@ import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 import TuneIcon from "@mui/icons-material/Tune";
 import UserList from "./UserList";
-import "./home.css";
+import "./listView.css";
 import uData from "../data.json";
 import { useState, useEffect } from "react";
 
-function Home() {
+function ListView() {
   const [userData, setUserData] = useState(uData);
   const [searchWord, setSearchWord] = useState("");
 
@@ -77,4 +77,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default ListView;

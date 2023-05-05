@@ -3,14 +3,14 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 
-function Header({ isHome }) {
+function Header({ isListView }) {
   return (
     <div className="header-main">
       <div className={`menu`}>
         <p className="menu-item">Clients</p>
         <p className="menu-item">Orders</p>
         <p className="menu-item">Messages</p>
-        {isHome ? (
+        {isListView ? (
           <p className="active menu-item">Users</p>
         ) : (
           <Link to="/" style={{ textDecoration: "none", color: "#6f7179" }}>

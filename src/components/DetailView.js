@@ -17,7 +17,7 @@ function DetailView() {
 
   return (
     <div className="detail-view-main">
-      <Header isHome={false} />
+      <Header isListView={false} />
       <Typography className="user-info-title" variant="h5" align="left">
         User Info
       </Typography>

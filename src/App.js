@@ -1,13 +1,13 @@
 import "./App.css";
 import DetailView from "./components/DetailView";
-import Home from "./components/Home";
+import ListView from "./components/ListView";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
+      element: <ListView />,
     },
     {
       path: "/user/:userId",
