@@ -15,7 +15,7 @@ function Map({geoLocation}) {
   };
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyCQofwgsylgwV2hJAiwYpiV1X573RfGOoc">
+    <LoadScript googleMapsApiKey={process.env.GOOGLE_MAP_KEY}>
       <GoogleMap
         mapContainerStyle={mapStyles}
         zoom={15}
