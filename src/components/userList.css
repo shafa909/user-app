@@ -60,3 +60,51 @@
   border-color: #f5dfdf;
   min-width: 55px;
 }
+
+@media only screen and (max-width: 808px) {
+  .user-phone {
+    display: none !important;
+  }
+  .user-name {
+    flex: 4;
+  }
+  .user-company {
+    flex: 3;
+  }
+  .user-email {
+    flex: 4;
+  }
+  .user-status {
+    flex: 1;
+  }
+}
+
+@media only screen and (max-width: 671px) {
+  .user-name {
+    display: none !important;
+  }
+  .user-company {
+    flex: 5;
+  }
+  .user-email {
+    flex: 6;
+  }
+  .user-status {
+    flex: 1;
+  }
+}
+
+@media only screen and (max-width: 501px) {
+  .user-name {
+    display: none !important;
+  }
+  .user-company {
+    flex: 10;
+  }
+  .user-email {
+    display: none !important;
+  }
+  .user-status {
+    flex: 2;
+  }
+}

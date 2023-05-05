@@ -15,6 +15,10 @@
   align-items: baseline;
 }
 
+.mobile-menu {
+  display: none !important;
+}
+
 .menu-item:hover {
   color: #143e84;
   cursor: default;
@@ -37,4 +41,13 @@
 
 .account-icon {
   font-size: 32px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: block !important;
+  }
 }

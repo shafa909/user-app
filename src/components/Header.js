@@ -1,6 +1,7 @@
 import "./header.css";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { Link } from "react-router-dom";
+import MenuIcon from "@mui/icons-material/Menu";
 
 function Header({ isHome }) {
   return (
@@ -18,6 +19,7 @@ function Header({ isHome }) {
         )}
         <p className="menu-item">Settings</p>
       </div>
+      <MenuIcon className="mobile-menu" />
       <AccountCircleIcon className="account-icon" />
     </div>
   );
