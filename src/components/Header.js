@@ -1,5 +1,6 @@
 import "./header.css";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import { Link } from "react-router-dom";
 
 function Header({ isHome }) {
   return (
@@ -8,7 +9,15 @@ function Header({ isHome }) {
         <p className="menu-item">Clients</p>
         <p className="menu-item">Orders</p>
         <p className="menu-item">Messages</p>
-        <p className={isHome ? "active menu-item" : "menu-item"}>Users</p>
+
+        {isHome ? (
+          <p className="active menu-item">Users</p>
+        ) : (
+          <Link to="/" style={{ textDecoration: "none", color: "#6f7179" }}>
+            <p className="menu-item">Users</p>
+          </Link>
+        )}
+
         <p className="menu-item">Settings</p>
       </div>
       <AccountCircleIcon className="account-icon" />

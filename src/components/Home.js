@@ -10,11 +10,6 @@ import "./home.css";
 import Data from "../data.json";
 
 function Home() {
-
-   let  namedata = Data.find(x => x.id === 1); 
-
-   console.log('ss', namedata)
-
   const iconAdornment = {
     style: { color: "#6f7179" },
     startAdornment: (
@@ -31,7 +26,7 @@ function Home() {
 
   return (
     <>
-      <Header isHome={true}  />
+      <Header isHome={true} />
       <div className="home-main">
         <div className="title-bar">
           <p className="home-user-title">Users</p>
