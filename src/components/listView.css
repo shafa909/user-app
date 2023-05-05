@@ -1,4 +1,4 @@
-.home-main {
+.list-view-main {
   display: flex;
   flex-direction: column;
 }
@@ -17,7 +17,7 @@
   font-weight: bold;
 }
 
-.home-user-title {
+.list-view-user-title {
   font-size: 31px !important;
   font-weight: bold;
   margin: 0px;
@@ -44,13 +44,12 @@
   color: #6f7179;
 }
 
-.user-box {
+.user-list-box {
   padding-block: 10px;
   padding-inline: 30px;
   display: flex;
   flex-direction: column;
 }
-
 
 @media only screen and (max-width: 795px) {
   .search-bar {

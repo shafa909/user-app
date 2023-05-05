@@ -43,10 +43,10 @@ function ListView() {
   }
   return (
     <>
-      <Header isHome={true} />
-      <div className="home-main">
+      <Header isListView={true} />
+      <div className="list-view-main">
         <div className="title-bar">
-          <p className="home-user-title">Users</p>
+          <p className="list-view-user-title">Users</p>
           <Button
             sx={{ textTransform: "none" }}
             className="add-user-btn"
@@ -67,7 +67,7 @@ function ListView() {
             }}
           />
         </div>
-        <div className="user-box">
+        <div className="user-list-box">
           {userData.map((user) => {
             return <UserList userData={user} />;
           })}
