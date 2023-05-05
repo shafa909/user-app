@@ -3,8 +3,8 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import ChatIcon from "@mui/icons-material/Chat";
 import TextLabel from "./TextLabel";
 import EditIcon from "@mui/icons-material/Edit";
-
 import "./userInfo.css";
+import Map from "./Map";
 
 function UserInfo({ userData }) {
   return (
@@ -15,13 +15,18 @@ function UserInfo({ userData }) {
           <AccountCircle className="user-info-icon" />
           <TextLabel label={"Username"} value={userData.username} />
         </Stack>
-        <Button
+        {/* <Button
           className="chat-btn"
           sx={{ textTransform: "none" }}
           variant="contained"
         >
           <ChatIcon />
-        </Button>
+        </Button> */}
+
+        <p className="active-user-status">
+          Active
+        </p>
+
       </div>
 
       <div className="info-box">
@@ -47,8 +52,8 @@ function UserInfo({ userData }) {
           </div>
         </div>
         <div className="data-box">
-         <TextLabel label={"Name"} value={userData.company?.name} />
-         <TextLabel
+          <TextLabel label={"Name"} value={userData.company?.name} />
+          <TextLabel
             label={"Catch Phrase"}
             value={userData.company?.catchPhrase}
           />
@@ -69,6 +74,16 @@ function UserInfo({ userData }) {
           <TextLabel label={"City"} value={userData.address?.city} />
           <TextLabel label={"Zipcode"} value={userData.address?.zipcode} />
         </div>
+      </div>
+
+      <div className="info-box">
+        <div className="title-editbtn-box">
+          <p className="info-title">Geo Location</p>
+          <div className="edit-btn">
+            <EditIcon className="edit-icon" />
+          </div>
+        </div>
+        <Map geoLocation={userData.address?.geo} />
       </div>
     </div>
   );

@@ -77,3 +77,14 @@
   grid-gap: 20px;
   padding: 10px;
 }
+
+
+.active-user-status { border-style: solid;
+padding: 5px;
+font-weight: bold;
+font-size: 14px;
+border-radius: 5px;
+background-color: #D0EAE7;
+color: #189689;
+border-color: #D0EAE7;
+}
