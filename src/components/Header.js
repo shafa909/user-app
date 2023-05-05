@@ -9,7 +9,6 @@ function Header({ isHome }) {
         <p className="menu-item">Clients</p>
         <p className="menu-item">Orders</p>
         <p className="menu-item">Messages</p>
-
         {isHome ? (
           <p className="active menu-item">Users</p>
         ) : (
@@ -17,7 +16,6 @@ function Header({ isHome }) {
             <p className="menu-item">Users</p>
           </Link>
         )}
-
         <p className="menu-item">Settings</p>
       </div>
       <AccountCircleIcon className="account-icon" />

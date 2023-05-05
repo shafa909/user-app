@@ -14,14 +14,13 @@ function UserInfo({ userData }) {
           <AccountCircle className="user-info-icon" />
           <TextLabel label={"Username"} value={userData.username} />
         </Stack>
-
         {userData.status === "active" ? (
           <p className="active-user-status">Active</p>
         ) : (
           <p className="inactive-user-status">Inactive</p>
         )}
       </div>
-
+      {/* personal info Section */}
       <div className="info-box">
         <div className="title-editbtn-box">
           <p className="info-title">Personal Information</p>
@@ -36,7 +35,7 @@ function UserInfo({ userData }) {
           <TextLabel label={"Website"} value={userData.website} />
         </div>
       </div>
-
+      {/* company Section */}
       <div className="info-box">
         <div className="title-editbtn-box">
           <p className="info-title">Company Information</p>
@@ -53,7 +52,7 @@ function UserInfo({ userData }) {
           <TextLabel label={"Bs"} value={userData.company?.bs} />
         </div>
       </div>
-
+      {/* address Section */}
       <div className="info-box">
         <div className="title-editbtn-box">
           <p className="info-title">Address</p>
@@ -68,7 +67,7 @@ function UserInfo({ userData }) {
           <TextLabel label={"Zipcode"} value={userData.address?.zipcode} />
         </div>
       </div>
-
+      {/* geo Section */}
       <div className="info-box">
         <div className="title-editbtn-box">
           <p className="info-title">Geo Location</p>
