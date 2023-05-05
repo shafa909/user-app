@@ -4,16 +4,14 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 function Header({ isHome }) {
   return (
     <div className="header-main">
-      <div className={`menu ${!isHome ? "margin-11" : ""}`}>
-        <p>Clients</p>
-        <p>Orders</p>
-        <p>Messages</p>
-        <p className={isHome ? "active" : ""}>Users</p>
-        <p>Settings</p>
+      <div className={`menu`}>
+        <p className="menu-item">Clients</p>
+        <p className="menu-item">Orders</p>
+        <p className="menu-item">Messages</p>
+        <p className={isHome ? "active menu-item" : "menu-item"}>Users</p>
+        <p className="menu-item">Settings</p>
       </div>
-      <div className="account">
-        <AccountCircleIcon className="account-icon" />
-      </div>
+      <AccountCircleIcon className="account-icon" />
     </div>
   );
 }

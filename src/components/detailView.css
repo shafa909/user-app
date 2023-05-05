@@ -1,20 +1,20 @@
 .detail-view-main {
-    background: #f6f6f6;
-    height: 100vh;
+  background: #f6f6f6;
+  height: auto;
+  padding-bottom: 60px;
 }
 
-
 .user-info-title {
-    margin-left: 50px !important;
-    margin-block:15px !important;
-    font-weight: 500 !important;
+  margin-left: 50px !important;
+  margin-block: 15px !important;
+  font-weight: bold !important;
 }
 
 .details-main {
-  margin-left: 50px; 
-  margin-right:30px ; 
+  margin-left: 50px;
+  margin-right: 40px;
   background-color: #ffffff;
-  border-radius:7px ;
+  border-radius: 7px;
   display: flex;
-  padding-block: 20px;
+  padding-block: 33px;
 }

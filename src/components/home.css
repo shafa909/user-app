@@ -12,9 +12,22 @@
   justify-content: space-between;
 }
 
+.menu-item {
+  font-size : 14px !important;
+  font-weight: bold;
+}
+
+.home-user-title{
+  font-size : 31px !important;
+  font-weight: bold;
+  margin: 0px;
+}
+
+
 .add-user-btn {
-  background-color: #0f3d83 !important;
+  background-color: #2572ba !important;
   text-transform: none;
+  border-radius: 11px !important;
 }
 
 .search-box {

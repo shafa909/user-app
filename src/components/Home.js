@@ -31,10 +31,10 @@ function Home() {
 
   return (
     <>
-      <Header />
+      <Header isHome={true}  />
       <div className="home-main">
         <div className="title-bar">
-          <Typography variant="h3">Users</Typography>
+          <p className="home-user-title">Users</p>
           <Button
             sx={{ textTransform: "none" }}
             className="add-user-btn"

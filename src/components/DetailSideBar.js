@@ -8,7 +8,6 @@ function DetailSideBar() {
       <p className='side-bar-menu-inactive' >Billing</p>
       <p className='side-bar-menu-inactive'>Data Export</p>
       <p className='side-bar-menu-inactive'>Settings</p>
-
       <p className='side-bar-menu-deactice'>Deactivate Account</p>
     </div>
   </>

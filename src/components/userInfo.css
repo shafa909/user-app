@@ -1,0 +1,79 @@
+.user-info-main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-inline: 30px;
+  align-items: flex-start;
+  width: 100%;
+  gap: 15px;
+}
+
+.profile-title {
+  font-size : 15px !important;
+  font-weight: bold;
+}
+
+.user-info-icon {
+  font-size: 57px !important;
+  color: #bcd4fb !important;
+}
+
+.name-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1.5px solid #f1f0f2;
+  padding: 10px;
+  border-radius: 7px;
+  width: -webkit-fill-available
+}
+
+.chat-btn{
+  background-color: #2572ba !important;
+  border-radius: 11px !important;
+}
+
+.info-box {
+  width: -webkit-fill-available;
+  border: 1.5px solid #f1f0f2;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.title-editbtn-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.info-title {
+  font-size : 12px !important;
+  font-weight: bold;
+}
+
+.edit-btn {
+  background-color: transparent !important;
+  border: 1px solid #917862 !important;
+  border-radius: 50% !important;
+  color: #917862 !important;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff6e3 !important;
+}
+
+.edit-icon {
+  font-size: 13px !important; 
+}
+
+.data-box {
+  width: -webkit-fill-available;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: auto;
+  list-style-type: none;
+  grid-gap: 20px;
+  padding: 10px;
+}
