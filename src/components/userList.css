@@ -81,10 +81,10 @@
 
 @media only screen and (max-width: 671px) {
   .user-name {
-    display: none !important;
+    flex: 5;
   }
   .user-company {
-    flex: 5;
+    display: none !important;
   }
   .user-email {
     flex: 6;
@@ -96,10 +96,10 @@
 
 @media only screen and (max-width: 501px) {
   .user-name {
-    display: none !important;
+    flex: 10;
   }
   .user-company {
-    flex: 10;
+    display: none !important;
   }
   .user-email {
     display: none !important;
